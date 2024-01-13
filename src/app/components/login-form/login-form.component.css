@@ -1,0 +1,36 @@
+
+input[type="text"]{
+    width: 250px;
+    padding: 10px;
+    margin: 6px 0;
+    border: none;
+    background-color: #F6F4F4;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    width: 250px;
+    background-color: #D95F76;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: lighter;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 15px;
+    color: #ffff;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 0 0 15px 1px#D95F76;
+}
+    
+.validation-error{
+    color: #ffff;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+   
+}

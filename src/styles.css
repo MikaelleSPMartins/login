@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-image: linear-gradient(to bottom,#DA616A, #303167,#191F3F);
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;  
+    
+}

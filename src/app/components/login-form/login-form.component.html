@@ -1,0 +1,16 @@
+<form (ngSubmit)="submit()" [formGroup]="loginForm" #formDir="ngForm">
+    <div class="form-group">
+        
+        <input type="text"  placeholder="Username" formControlName="userName" required>
+        <div *ngIf="userName.invalid && formDir.submitted" class="validation-error">
+            <span *ngIf="userName.errors?.['required']">Este campo é obrigatório</span>
+        </div>
+
+        <input type="text"  placeholder="Password" formControlName="password" required>
+        <div *ngIf="password.invalid && formDir.submitted" class="validation-error">
+            <span *ngIf="password.errors?.['required']">Este campo é obrigatório</span> 
+        </div>
+    </div>
+    <input type="submit" value="LOGIN">
+    
+</form>
